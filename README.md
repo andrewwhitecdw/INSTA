@@ -2,7 +2,7 @@
 
 A GPU-accelerated, Differentiable Static Timing Analysis Engine for Industrial Physical Design Applications
 
-INSTA is the first-ever differentiable GPU-STA framework that achieves near-perfect endpoint slack correlation to an industry-standard commercial signoff tool with OCV support for advanced technology nodes. On a design with 15 millions pins, INSTA performs full-graph timing propagation in less than 0.1 seconds with 0.999 correlation to the reference signoff tool.
+INSTA is the first-ever differentiable GPU-STA framework that achieves near-perfect endpoint slack correlation to an industry-standard commercial signoff tool with OCV support for advanced technology nodes. On a design with 15 million pins, INSTA performs full-graph timing propagation in less than 0.1 seconds with 0.999 correlation to the reference signoff tool.
 
 INSTA's GPU-accelerated Top-K statistical arrival propagation CUDA kernel efficiently manages CPPR, a must-handle timing pessimism in advanced technology nodes.
 
@@ -53,7 +53,7 @@ insta.do_set_insta_path('testcase/aes_cipher_top/', 'aes')
 insta.do_initialization()
 ```
 
-## Differentiable Timing Propgation & Gradient Extraction
+## Differentiable Timing Propagation & Gradient Extraction
 ```
 insta.do_diff_propagation(plot=True)
 (-insta.tns).backward()
